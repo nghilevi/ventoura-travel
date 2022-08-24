@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@import 'base.css';
+
+.ipt_nomal{background-color:#fff;border-color:#a0b4c5;}
+
+
+body,.schbox .inpt {
+	background: url(../i/snsbg.gif) repeat-x;
+	margin-top: 0
+}
+
+body {
+	background-position: 0 -169px
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.gray{color:#aaa}
+
+/* regedit */
+.reg_container {
+	position: relative;
+	margin: 0 auto;
+	padding: 16px 0;
+	width: 750px;
+	height: auto;
+	background-color: white;
+	overflow: auto;
+}
+
+.regedit {
+	margin-left:20px;
+}
+
+.regedit h2 {
+	font-size: 14px;
+	padding-left: 32px;
+	margin-bottom: 15px;
+	padding-bottom: 16px;
+	text-align: left;
+	border-bottom: #dedede 1px solid;
+	_margin-right: -15px
+}
+
+.regedit li {
+	margin: 6px auto;
+	padding: 0 20px;
+	display: block;
+	line-height: 24px;
+	font-size: 12px;
+	text-align: left;
+	position: relative
+}
+
+.regedit li label {
+	font-weight: bold
+}
+
+.regedit li span {
+	margin-left: 12px;
+	position: absolute;
+	top: 18px;
+}
+
+.regedit li .ipt {
+	width: 220px;
+	border-width: 1px;
+	border-style: solid;
+	height: 20px;
+	font-weight: bold;
+	padding: 7px 5px 3px;
+	font-family: verdana, simsun, sans-serif;
+	vertical-align: middle;
+}
+
+.regedit .hint {
+	line-height: 22px;
+	position: absolute;
+	width: 210px;
+	right: 200px;
+	top: 5px;
+	font-family: "宋体"
+}
+
+.regedit .button {
+	width: 86px;
+	height: 33px;
+	background: url(../i/login_button.gif);
+	border: 0;
+	cursor: pointer;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	*padding: 3px 0 0px;
+	margin-top: 8px
+}
+
+
+

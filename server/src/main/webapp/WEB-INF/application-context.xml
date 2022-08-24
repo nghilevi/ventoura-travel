@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans      http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       http://www.springframework.org/schema/mvc        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+       http://www.springframework.org/schema/context    http://www.springframework.org/schema/context/spring-context-3.2.xsd
+       http://www.springframework.org/schema/tx         http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+	<!-- Define your application beans here. They will be available to the beans 
+		defined in your web-context because it is a sub-context. Beans defined in 
+		the web-context will not be available in the application context. -->
+	<!-- Scans the classpath of the application for @Components to deploy as 
+		beans -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.Mindelo.VentouraServer.Controller" />
+	<context:component-scan base-package="com.Mindelo.VentouraServer.DAO" />
+	<context:component-scan base-package="com.Mindelo.VentouraServer.Service" />
+
+	<!-- Configures the @Controller programming model -->
+	<mvc:annotation-driven />
+
+	<!-- start the IM server when the server start running -->
+	<bean name="starter" init-method="init"
+		class="com.Mindelo.VentouraServer.Main.IMManager" lazy-init="false" />
+
+
+	<!-- spring transaction entity manager settings -->
+	<bean id="persistenceUnitManager"
+		class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager">
+		<property name="persistenceXmlLocations">
+			<list>
+				<value>classpath*:META-INF/persistence.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitManager" ref="persistenceUnitManager" />
+		<property name="persistenceUnitName" value="entityManager" />
+		<property name="packagesToScan" value="com.Mindelo.VentouraServer.Entity" />
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<tx:annotation-driven />
+
+</beans>
