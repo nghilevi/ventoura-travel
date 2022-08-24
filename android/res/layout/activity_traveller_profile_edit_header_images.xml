@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_head_img_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.Mindelo.Ventoura.UI.View.RoundedImageView
+        xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/traveller_rounded_profile_image"
+        android:layout_width="@dimen/user_edit_head_img_bg_width"
+        android:layout_height="@dimen/user_edit_head_img_bg_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        roundedimageview:border_color="@color/roundedimage_color"
+        roundedimageview:border_thickness="@dimen/small_roundedimage_thickness" />
+
+    <com.Mindelo.Ventoura.UI.View.DraggableGridView
+        android:id="@+id/draggable_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/profile_head_img_selector_height"
+        android:layout_below="@+id/traveller_rounded_profile_image"
+        android:layout_gravity="center_vertical" >
+    </com.Mindelo.Ventoura.UI.View.DraggableGridView>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/country_selector_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/country_selector_titlebar"
+        layout="@layout/title_bar_back" />
+
+    <ListView
+        android:id="@+id/lv_country_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_selector_titlebar"
+        android:layout_toLeftOf="@+id/quickscroll"
+        android:background="@null"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/selector_bg_white_lightwhite"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </ListView>
+
+    <com.Mindelo.Ventoura.UI.View.QuickScroll
+        android:id="@+id/quickscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/country_selector_titlebar" />
+
+</RelativeLayout>

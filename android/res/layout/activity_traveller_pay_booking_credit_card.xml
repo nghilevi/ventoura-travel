@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <include layout="@layout/title_bar_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_instruction_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/traveller_pay_booking_credit_card_slide_image_height"
+            android:layout_below="@+id/layout_title"
+            android:background="@color/lightgray"
+            android:orientation="vertical" >
+
+            <com.Mindelo.Ventoura.UI.View.TravellerPayBookingCreditCardViewPager
+                android:id="@+id/vp_instruction_iamge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pay_booking_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_instruction_image"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/et_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/traveller_pay_booking_credit_card_edit_text_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border_pay_booking_credit_card_edit_detault_field"
+                    android:hint="Card Number"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_credit_card_edit_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_expiry_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/et_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/traveller_pay_booking_credit_card_edit_text_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border_pay_booking_credit_card_edit_detault_field"
+                    android:hint="Expiry Date"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_credit_card_edit_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_security_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/et_security_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/traveller_pay_booking_credit_card_edit_text_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border_pay_booking_credit_card_edit_detault_field"
+                    android:hint="Security Code"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_credit_card_edit_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_continue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" >
+
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Pay Now"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

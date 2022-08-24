@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_blue"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_menu_option" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_menubar"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/top_menu_padding_lr"
+        android:paddingRight="@dimen/top_menu_padding_lr" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ventoura_name_tv"
+                style="@style/ventoura_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fredericka-Jane" />
+
+            <TextView
+                style="@style/ventoura_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", " />
+
+            <TextView
+                android:id="@+id/ventoura_age_tv"
+                style="@style/ventoura_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ventoura_city_tv"
+            style="@style/ventoura_info_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="London, UK" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" >
+
+        <include layout="@layout/ventoura_card_inner" />
+
+        <com.Mindelo.Ventoura.UI.View.CardContainerView
+            android:id="@+id/iv_guide_ventouring_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <!-- layout: personal info and button YES and NO -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/ventouring_button_padding_bottom"
+            android:paddingLeft="@dimen/ventouring_button_padding_lr"
+            android:paddingRight="@dimen/ventouring_button_padding_lr" >
+
+            <!-- Button NO -->
+
+            <ImageButton
+                android:id="@+id/btn_ventouring_no"
+                android:layout_width="@dimen/ventouring_button_wh"
+                android:layout_height="@dimen/ventouring_button_wh"
+                android:background="@drawable/selector_btn_ventouring" />
+
+            <ImageButton
+                android:id="@+id/btn_ventouring_yes"
+                android:layout_width="@dimen/ventouring_button_wh"
+                android:layout_height="@dimen/ventouring_button_wh"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_btn_ventouring_yes" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

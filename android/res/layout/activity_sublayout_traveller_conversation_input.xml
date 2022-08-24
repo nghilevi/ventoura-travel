@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Mindelo.Ventoura.UI.View.ConversationEmoticonEditTextLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ConversationEmoticonEditTextLayout"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottom_write_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conversation_message_bar" >
+
+        <EditText
+            android:id="@+id/conversation_edittext_message_content_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/conversation_edittext_message_chatface_field"
+            android:background="@drawable/conversation_message_content_field"
+            android:hint="Type Message"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/text_field_color"
+            android:textSize="20sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/conversation_edittext_message_chatface_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/conversation_edittext_message_content_field"
+            android:layout_alignTop="@+id/conversation_edittext_message_content_field"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button_conversatioon_send_message"
+            android:background="@drawable/conversation_message_chatface_field"
+            android:inputType="none"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_field_color"
+            android:textSize="20sp" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/chat_face_select_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edittext_conversation_message_chatface_field"
+            android:layout_alignRight="@+id/edittext_conversation_message_chatface_field"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button_conversatioon_send_message"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/conversation_input_face" />
+
+        <Button
+            android:id="@+id/button_conversatioon_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_conversation_send_button"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Send"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_chatface_choose"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/bottom_write_bar"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_chatface_choose"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_chatface_page_selection"
+            android:layout_centerVertical="true" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/layout_chatface_page_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.Mindelo.Ventoura.UI.View.ConversationEmoticonEditTextLayout>

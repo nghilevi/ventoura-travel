@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_menu_height"
+    android:background="@drawable/bg_top_menubar"
+    android:paddingLeft="@dimen/top_menu_padding_lr" >
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/vp_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:padding="10dip"
+            app:fillColor="@color/ventoura_color"
+            app:pageColor="@color/white"
+            app:radius="5dp"
+            app:strokeColor="@color/ventoura_color"
+            app:strokeWidth="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" >
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="@dimen/top_menu_back_arrow_width"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/top_menu_back_arrow_padding_top_bottom"
+            android:paddingTop="@dimen/top_menu_back_arrow_padding_top_bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_to_left_black" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/top_menu_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/arrow_back"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:onClick="btnBackOnClick"
+            android:text="Back" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_action"
+        style="@style/top_menu_text_action_style"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/top_menu_action_btn_margin"
+        android:background="@drawable/selector_btn_to_menu_action"
+        android:onClick="btnActionOnClick"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Action" />
+
+</FrameLayout>

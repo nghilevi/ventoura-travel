@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_traveller_promotion_attended"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/activity_traveller_promotion_preview_city_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/traveller_promotion_dream_city_wh"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/promotion_dream_trip_finish_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awesome.Thanks."
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Winners will be announced on"
+            android:textColor="@color/gray"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="21/01/2015 on our Facebook page!"
+            android:textColor="@color/gray"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+
+
+Added: reset TravellerPromotionFragment
+
+android:visibility="gone"
+
+
+
+
+
+Remove these keywords:
+
+spinner_progress_bar_color_circle
+
+fragment progress bar whole screen
+ <!-- <ProgressBar
+            android:id="@+id/progress_bar_whole_screen"
+            android:layout_width="@dimen/progress_bar_whole_screen_width"
+            android:layout_height="@dimen/progress_bar_whole_screen_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/spinner_progress_bar_pure_white" /> -->
+
+                            <ProgressBar
+                                android:id="@+id/ventoura_loading_progress_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" />
+
+
+
+New
+.creatring
+fragment_loading_layout
+
+

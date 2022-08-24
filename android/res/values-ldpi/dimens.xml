@@ -1,0 +1,15 @@
+<resources>
+    <!-- ldpi -->
+    <dimen name="ventouring_head_show_wh">190dp</dimen>
+    <dimen name="ventouring_head_show_margin_top">10dp</dimen>
+    
+    <dimen name="settings_label_text_size">19sp</dimen>
+
+    <!-- ventouring button -->
+    <dimen name="ventouring_button_padding_bottom">80dp</dimen>
+    <dimen name="ventouring_button_padding_lr">25dp</dimen>
+    <dimen name="ventouring_button_wh">100dp</dimen>
+    
+    <dimen name="traveller_promotion_dream_city_wh">250dp</dimen>
+    
+</resources>

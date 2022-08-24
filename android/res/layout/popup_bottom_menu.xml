@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_bottom_menu"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/popup_bottom_menu_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_bottom_menu"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="21sp"
+        android:textColor="@drawable/selector_bottom_menu_cancelbtn_text_color"
+        android:text="Cancel"/>
+
+</LinearLayout>

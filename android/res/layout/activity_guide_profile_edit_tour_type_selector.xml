@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tour_type_selector_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_white" >
+
+    <include
+        android:id="@+id/activity_tour_type_selector_titlebar"
+        layout="@layout/title_bar_back" />
+
+    <ListView
+        android:id="@+id/lv_tour_type_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_tour_type_selector_titlebar"
+        android:background="@null"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/selector_bg_white_lightwhite"
+        android:overScrollMode="never">
+    </ListView>
+
+
+</RelativeLayout>

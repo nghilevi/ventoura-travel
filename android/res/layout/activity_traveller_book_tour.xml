@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar_back" />
+
+        <com.Mindelo.Ventoura.UI.View.RoundedImageView
+            android:id="@+id/traveller_book_tour_guide_head_img"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/no_image_available" />
+
+        <TextView
+            android:id="@+id/traveller_book_tour_guide_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Fredericka Jane"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/traveller_book_tour_city_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="London"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/traveller_book_tour_price_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="$45"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/traveller_book_tour_payment_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/booking_payment_status_cash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/traveller_book_tour_date_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/selector_bg_white_lightwhite"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/traveller_book_tour_date_content_padding_TB"
+                android:paddingTop="@dimen/traveller_book_tour_date_content_padding_TB" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/traveller_book_tour_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/iv_traveller_book_tour_date_arrow"
+                    android:text="Choose"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_traveller_book_tour_date_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/traveller_book_tour_time_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_bg_white_lightwhite"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/traveller_book_tour_date_content_padding_TB"
+                android:paddingTop="@dimen/traveller_book_tour_date_content_padding_TB" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Time"
+                   android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/traveller_book_tour_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/iv_traveller_book_tour_time_arrow"
+                    android:text="Choose"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_traveller_book_tour_time_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_gray_720" />
+
+        <Button
+            android:id="@+id/btn_traveller_book_tour_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_bg_ventoura_gray"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:text="Send Booking Request"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+</RelativeLayout> 

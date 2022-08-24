@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mfilter_margin_bottom" >
+
+        <!-- 1: Types -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_label_tv"
+                    style="@style/settings_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:gravity="bottom"
+                    android:text="Booking Filters" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divider_gray_720" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_request_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_request_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_request" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_request_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_not_paid_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_not_paid_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_not_paid" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_not_paid_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_paid_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_paid_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_paid" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_paid_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_cancelled_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_cancelled_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_cancelled" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_cancelled_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_complete_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_complete_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_complete" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_complete_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/bfilter_book_error_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_book_error_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/bfilter_book_error" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_book_error_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+        </LinearLayout>
+
+        <!-- 2:Gender -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/bfilter_gender_label_tv"
+                    style="@style/settings_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:gravity="bottom"
+                    android:text="Gender" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divider_gray_720" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mfilter_female_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_female_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/mfilter_gender_female" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_female_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin_left"
+                android:layout_marginRight="@dimen/setting_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:id="@+id/mfilter_male_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/mfiler_margin_item_top_bottom"
+                android:paddingTop="@dimen/mfiler_margin_item_top_bottom" >
+
+                <TextView
+                    android:id="@+id/bfilter_male_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_margin_left"
+                    android:text="@string/mfilter_gender_male" />
+
+                <CheckBox
+                    android:id="@+id/bfilter_male_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:button="@drawable/selector_switch_btn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

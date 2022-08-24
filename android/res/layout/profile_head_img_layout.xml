@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_head_img_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profile_head_img_bg_height"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.Mindelo.Ventoura.UI.View.RoundedImageView
+        android:id="@+id/profile_head_img"
+        android:layout_width="@dimen/profile_head_img_wh"
+        android:layout_height="@dimen/profile_head_img_wh"
+        android:contentDescription="@null"
+        android:src="@drawable/bg_main_blue"
+        roundedimageview:border_color="@color/roundedimage_color"
+        roundedimageview:border_thickness="@dimen/large_roundedimage_thickness" />
+
+</LinearLayout>

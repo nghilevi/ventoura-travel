@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Mindelo.Ventoura.UI.View.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/roundImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    roundedimageview:border_color="@android:color/white"
+    android:background="@drawable/selector_btn_circle_add_new"
+    roundedimageview:border_thickness="1dp" />

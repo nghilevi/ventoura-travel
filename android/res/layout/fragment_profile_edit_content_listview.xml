@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This fragment was used as the fragment by Traveller edit profile and Guide edit profile -->
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="#ddd"
+    android:dividerHeight="1px"
+    android:scrollbars="none" />

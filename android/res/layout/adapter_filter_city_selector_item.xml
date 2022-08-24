@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/filter_city_selector_item_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beijing"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+        
+        
+        <CheckBox 
+            android:id="@+id/filter_city_selector_item_checkbox"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/selector_switch_btn"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_gray_720" />
+
+</RelativeLayout>

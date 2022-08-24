@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar_back" />
+
+        <com.Mindelo.Ventoura.UI.View.RoundedImageView
+            android:id="@+id/guide_booking_status_traveller_head_img"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/no_image_available" />
+
+        <TextView
+            android:id="@+id/guide_booking_status_traveller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Fredericka Jane"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/guide_booking_status_city_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="London"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/guide_booking_status_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="$45"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/guide_booking_status_tour_time_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:padding="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/guide_refuse_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_guide_refuse_request" 
+                android:text="Refuse"
+                android:layout_weight="1" >
+            </Button>
+            
+            <Button
+                android:id="@+id/guide_accept_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="Accept"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_guide_accept_request" 
+                android:layout_weight="1" >
+            </Button>
+        </LinearLayout >
+    </LinearLayout>
+
+</RelativeLayout>

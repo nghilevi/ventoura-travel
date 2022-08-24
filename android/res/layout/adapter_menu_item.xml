@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp" >
+
+    <!-- icon and unread messages bubbles -->
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center" >
+
+            <ImageView
+                android:id="@+id/row_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/label_img_description" />
+        </LinearLayout>
+
+        <!-- unread messages' tips -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top|right">
+
+            <TextView
+                android:id="@+id/row_unread_tv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/bg_menu_notification_tips"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- text -->
+    <TextView
+        android:id="@+id/row_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="LeftMenu"
+        android:textColor="@drawable/selector_menu_text_color"
+        android:textSize="25sp" />
+
+</LinearLayout>

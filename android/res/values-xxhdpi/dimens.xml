@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- xxhdpi -->
+    <dimen name="ventouring_head_show_wh">280dp</dimen>
+    <dimen name="ventouring_head_show_margin_top">25dp</dimen>
+    
+    <dimen name="ventouring_head_show_padding_top">10dp</dimen>
+    <dimen name="ventouring_head_show_padding_bottom">40dp</dimen>
+    
+    <dimen name="ventouring_head_show_margin_bottom">10dp</dimen>
+    
+    
+    <!-- ventouring button -->
+    <dimen name="ventouring_button_padding_bottom">50dp</dimen>
+    <dimen name="ventouring_button_padding_lr">25dp</dimen>
+    <dimen name="ventouring_button_wh">85dp</dimen>
+
+    <dimen name="traveller_promotion_dream_city_wh">250dp</dimen>
+</resources>

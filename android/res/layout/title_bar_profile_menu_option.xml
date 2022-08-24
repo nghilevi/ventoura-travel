@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_menu_height"
+    android:background="@drawable/bg_top_menubar"
+    android:paddingLeft="@dimen/top_menu_padding_lr" >
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/vp_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:padding="10dip"
+            app:fillColor="@color/ventoura_color"
+            app:pageColor="@color/white"
+            app:radius="5dp"
+            app:strokeColor="@color/ventoura_color"
+            app:strokeWidth="1dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_menu"
+        style="@style/top_menu_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="btnMenuOnClick"
+        android:text="Menu" />
+
+    <Button
+        android:id="@+id/btn_title_bar_edit"
+        style="@style/top_menu_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:paddingRight="@dimen/top_menu_padding_lr"
+        android:text="Edit" />
+
+</FrameLayout>

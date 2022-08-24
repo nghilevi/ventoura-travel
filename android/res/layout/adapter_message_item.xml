@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/message_list_item_height"
+    android:background="@drawable/selector_bg_white_lightwhite"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/message_list_paddingL" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <com.Mindelo.Ventoura.UI.View.RoundedImageView
+            android:id="@+id/iv_message_list_head_image"
+            android:layout_width="@dimen/message_list_item_head_image_height"
+            android:layout_height="@dimen/message_list_item_head_image_height"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_main_blue"
+            roundedimageview:border_color="@color/roundedimage_color"
+            roundedimageview:border_thickness="@dimen/small_roundedimage_thickness" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/message_list_item_info_marginTB"
+            android:paddingLeft="8dp"
+            android:paddingTop="@dimen/message_list_item_info_marginTB" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:id="@+id/tv_message_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textColor="@color/message_name_color"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_message_list_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:layout_toLeftOf="@+id/message_list_item_arrow"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/message_time_color"
+                    android:textSize="@dimen/message_list_time_size" />
+                
+                <ImageView 
+                    android:id="@+id/message_list_item_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/arrow_to_right_gray"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/divider_message_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_gray_720" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_message_list_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:maxLines="2"
+                    android:text="hello hellohel dadfsadfsdfsadfsdf asdfasdfsdfsdf" />
+
+                <TextView
+                    android:id="@+id/tv_message_unread_number_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:background="@drawable/message_list_unread_tips_bg"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

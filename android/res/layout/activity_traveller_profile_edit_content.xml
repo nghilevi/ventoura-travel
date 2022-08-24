@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_profile_block_margin_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/traveller_profile_edit_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user_profile_arrow_width"
+            android:layout_marginRight="@dimen/user_profile_arrow_width"
+            android:text="@string/traveller_profile_edit_description_title"
+            android:textSize="@dimen/user_profile_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveller_profile_edit_description_title"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/divider_gray_des" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/user_profile_item_padding_top_bottom"
+                android:layout_marginTop="@dimen/user_profile_item_padding_top_bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/traveller_profile_edit_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/user_profile_arrow_width"
+                    android:layout_toLeftOf="@+id/iv_arrow_to_description_input"
+                    android:background="@drawable/selector_bg_white_lightwhite"
+                    android:hint="@string/traveller_profile_edit_description_hint"
+                    android:inputType="textMultiLine"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/user_profile_textsize" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_to_description_input"
+                    android:layout_width="@dimen/user_profile_arrow_width"
+                    android:layout_height="@dimen/user_profile_arrow_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/user_profile_arrow_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/divider_gray_des" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_profile_block_margin_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/traveller_profile_edit_country_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user_profile_arrow_width"
+            android:text="@string/traveller_profile_edit_country_title"
+            android:textSize="@dimen/user_profile_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveller_profile_edit_country_title"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/divider_gray_des" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/user_profile_item_padding_top_bottom"
+                android:layout_marginTop="@dimen/user_profile_item_padding_top_bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/traveller_profile_edit_country_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/user_profile_arrow_width"
+                    android:layout_marginRight="@dimen/user_profile_arrow_width"
+                    android:layout_toLeftOf="@+id/iv_arrow_to_country_input"
+                    android:background="@drawable/selector_bg_white_lightwhite"
+                    android:hint="@string/traveller_profile_edit_country_hint"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/user_profile_textsize" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_to_country_input"
+                    android:layout_width="@dimen/user_profile_arrow_width"
+                    android:layout_height="@dimen/user_profile_arrow_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/user_profile_arrow_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/divider_gray_des" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

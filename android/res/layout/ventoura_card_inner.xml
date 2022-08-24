@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/global_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20" >
+
+            <ImageView
+                android:id="@+id/ventouring_pin_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ventouring_pin_bg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:paddingBottom="@dimen/ventouring_head_show_padding_top"
+                    android:paddingTop="@dimen/ventouring_head_show_padding_top" >
+
+                    <!-- top image: above stars -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true" >
+
+                        <com.Mindelo.Ventoura.UI.View.RoundedImageView
+                            android:id="@+id/ventouring_rounded_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/bg_main_blue"
+                            roundedimageview:border_color="@color/roundedimage_color"
+                            roundedimageview:border_thickness="@dimen/large_roundedimage_thickness" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ProgressBar
+                                android:id="@+id/ventoura_loading_progress_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/ventouring_no_tv"
+                            style="@style/ventouring_page_watermark_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/ventouring_head_show_padding_top"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ventouring_nope_shadow"
+                            android:rotation="20"
+                            android:text="NOPE"
+                            android:textColor="@drawable/ventoura_color"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/ventouring_yes_tv"
+                            style="@style/ventouring_page_watermark_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/ventouring_head_show_padding_top"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ventouring_yes_shadow"
+                            android:rotation="-20"
+                            android:text="LIKE"
+                            android:textColor="@color/green"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- ventoura info -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ventoura_type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Biking Tour"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <ImageView
+                        android:id="@+id/ventoura_stars_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ventoura_stars_tmp" />
+
+                    <ImageView
+                        android:id="@+id/ventoura_nationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

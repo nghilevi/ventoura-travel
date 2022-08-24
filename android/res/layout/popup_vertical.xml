@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/top_menu_padding_lr" >
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_menu_action_bg"
+        android:fadingEdgeLength="5dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

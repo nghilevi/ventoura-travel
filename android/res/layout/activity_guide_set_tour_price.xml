@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_gallery_whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_gallery_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/user_profile_item_pading_left_and_right"
+            android:paddingRight="@dimen/user_profile_item_pading_left_and_right" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Your Price: "
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/guide_set_tour_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="40"
+                    android:textColor="@color/ventoura_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/guide_set_tour_price_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/seekbar_process_bg"
+                android:thumb="@drawable/selector_seek_bar_thumb" />
+
+            <!-- Your Tour Fee -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/guide_set_tour_price_your_tour_fee_tv"
+                    android:layout_width="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/guide_set_price_fee_eclipse_bg"
+                    android:gravity="center"
+                    android:text="￡40"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_your_tour_fee_tv" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/guide_set_tour_price_your_tour_fee_divider"
+                        android:text="Your Tour Fee"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/guide_set_tour_price_your_tour_fee_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_des" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/guide_set_tour_price_text_margin"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_your_tour_fee_tv"
+                    android:text="set the text content based on payment method set the" />
+            </RelativeLayout>
+
+            <!-- Booking Fee -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/guide_set_tour_price_booking_fee_tv"
+                    android:layout_width="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/guide_set_price_fee_eclipse_bg"
+                    android:gravity="center"
+                    android:text="￡8"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_booking_fee_tv" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/guide_set_tour_price_booking_fee_divider"
+                        android:text="Booking Fee"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/guide_set_tour_price_booking_fee_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_des" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/guide_set_tour_price_text_margin"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_booking_fee_tv"
+                    android:text="set the text content based on payment method set the text content based on payment method set the text content based on payment methodset the text content based on payment method" />
+            </RelativeLayout>
+
+            <!-- Total Tour Fee -->
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/guide_set_tour_price_your_total_fee_tv"
+                    android:layout_width="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/guide_set_price_fee_eclipse_bg"
+                    android:gravity="center"
+                    android:text="￡48"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/guide_set_tour_price_eclipse_height"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_your_total_fee_tv" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/guide_set_tour_price_your_total_fee_divider"
+                        android:text="Your Total Fee"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/guide_set_tour_price_your_total_fee_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_des" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/guide_set_tour_price_text_margin"
+                    android:layout_toLeftOf="@+id/guide_set_tour_price_your_total_fee_tv"
+                    android:text="set the text content based on payment method " />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

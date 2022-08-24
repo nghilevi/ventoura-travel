@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/settings_padding_vertical" >
+
+            <!-- 1: Notifications -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/setting_marging_label_left" >
+
+                    <TextView
+                        android:id="@+id/setting_notifications_label_tv"
+                        style="@style/settings_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="bottom"
+                        android:paddingTop="@dimen/settings_padding_vertical"
+                        android:text="Notifications" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_720" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingLeft="@dimen/setting_margin_left"
+                    android:paddingRight="@dimen/setting_margin_right"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_match_alert_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/settings_match_alert_switch"
+                        android:text="@string/setting_match_alert" />
+
+                    <CheckBox
+                        android:id="@+id/settings_match_alert_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_switch_btn"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingLeft="@dimen/setting_margin_left"
+                    android:paddingRight="@dimen/setting_margin_right"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_message_alert_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/settings_message_alert_switch"
+                        android:text="@string/setting_message_alert" />
+
+                    <CheckBox
+                        android:id="@+id/settings_message_alert_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_switch_btn"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingLeft="@dimen/setting_margin_left"
+                    android:paddingRight="@dimen/setting_margin_right"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_half_reminder_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/settings_half_reminder_switch"
+                        android:text="@string/setting_half_hour_reminder" />
+
+                    <CheckBox
+                        android:id="@+id/settings_half_reminder_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_switch_btn"
+                        android:button="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 2:Account Options -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <!-- Label -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/setting_marging_label_left" >
+
+                    <TextView
+                        android:id="@+id/setting_accounts_label_tv"
+                        style="@style/settings_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="bottom"
+                        android:paddingTop="@dimen/settings_padding_vertical"
+                        android:text="Account Options" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_720" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_switch_accounts_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="Switch to Local" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/settings_switch_accounts_switch" -->
+                    <!-- style="@style/settings_text_style" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/setting_margin_arrow_right" -->
+                    <!-- android:layout_toLeftOf="@+id/settings_switch_accounts_arrow" -->
+                    <!-- android:text="Traveller" /> -->
+
+                    <Button
+                        android:id="@+id/settings_switch_accounts_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/settings_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_logout_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_logout" />
+
+                    <Button
+                        android:id="@+id/settings_logout_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+
+                <!-- disable_account -->
+
+                <RelativeLayout
+                    android:id="@+id/settings_disable_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_disable_account_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_disable_account" />
+
+                    <Button
+                        android:id="@+id/settings_disable_account_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 3: Ventoura -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <!-- Label -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/setting_marging_label_left" >
+
+                    <TextView
+                        android:id="@+id/setting_ventoura_label_tv"
+                        style="@style/settings_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="bottom"
+                        android:paddingTop="@dimen/settings_padding_vertical"
+                        android:text="Ventoura" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/divider_gray_720" />
+                </LinearLayout>
+
+                <!-- more info -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_more_info_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_about_ventoura" />
+
+                    <Button
+                        android:id="@+id/settings_about_ventour_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+
+                <!-- contact us -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_contact_us_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_contact_us" />
+
+                    <Button
+                        android:id="@+id/settings_feedback_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+
+                <!-- Like us on facebook -->
+
+                <RelativeLayout
+                    android:id="@+id/settings_like_us_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_like_us_facebook_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_like_us_on_facebook" />
+
+                    <Button
+                        android:id="@+id/settings_like_us_facebook_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:background="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+
+                <!-- Follow us on Twitter -->
+
+                <RelativeLayout
+                    android:id="@+id/settings_follow_us_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_settings_layout_btn_bg"
+                    android:paddingBottom="@dimen/settings_padding_vertical"
+                    android:paddingTop="@dimen/settings_padding_vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_follow_us_twitter_tv"
+                        style="@style/settings_label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/setting_margin_left"
+                        android:text="@string/setting_follow_us_on_twitter" />
+
+                    <ImageView
+                        android:id="@+id/settings_follow_us_twitter_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/setting_margin_right"
+                        android:src="@drawable/selector_btn_settings_arrow_with_oven" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/layout_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <include layout="@layout/title_bar_back" />
+
+            <com.Mindelo.Ventoura.UI.View.RoundedImageView
+                android:id="@+id/traveller_pay_booking_summary_head_image"
+                android:layout_width="@dimen/traveller_pay_booking_summary_image_width"
+                android:layout_height="@dimen/traveller_pay_booking_summary_image_height"/>
+
+            <TextView
+                android:id="@+id/tv_tourist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/traveller_pay_booking_summary_name_textsize" />
+
+            <TextView
+                android:id="@+id/tv_tourist_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/traveller_pay_booking_summary_city_textsize" />
+
+            <TextView
+                android:id="@+id/tv_tourist_time_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/traveller_pay_booking_summary_time_textsize" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_payment_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_personal_info"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_notice_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_notice_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/traveller_pay_booking_summary_alert_sybmol" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_notice_message"
+                    android:text="You will be charged the following"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_local_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_notice_message"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_activity_traveller_pay_booking_summary_local_fee" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Local Fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_local_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="0.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_ventoura_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_local_fee" >
+
+                <View
+                    android:id="@+id/layout_left_vertical_line"
+                    android:layout_width="1dip"
+                    android:layout_height="5dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="1dip"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Ventoura Fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_ventoura_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/layout_right_vertical_line"
+                    android:paddingBottom="5dp"
+                    android:text="0.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+
+                <View
+                    android:id="@+id/layout_right_vertical_line"
+                    android:layout_width="1dip"
+                    android:layout_height="5dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_total_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_ventoura_fee"
+                android:background="@drawable/border_activity_traveller_pay_booking_total_fee" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/traveller_pay_booking_summary_fee_title_textsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_payment_method_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:id="@+id/layout_payment_paypal_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/traveller_pay_booking_summary_paypal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="PayPal"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_payment_credit_card_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_payment_paypal_method"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/traveller_pay_booking_summary_credit_card" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/payment_system_credit_card"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/arrow_to_right_gray" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

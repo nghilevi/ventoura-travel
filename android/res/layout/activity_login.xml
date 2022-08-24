@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.Mindelo.Ventoura.UI.View.MovingBackgroundSurfaceView
+        android:id="@+id/MySurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_transparent_diamond" />
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/login_ventoura_brand" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/bottomlayout"
+        android:background="@drawable/login_grey_bar" >
+
+        <com.facebook.widget.LoginButton
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/facebook_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/transparent_bg"
+            android:contentDescription="@string/label_img_description" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/login_image_view" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:clickable="true" -->
+        <!-- android:contentDescription="@null" -->
+        <!-- android:focusable="true" -->
+        <!-- android:scaleType="centerInside" -->
+        <!-- android:src="@drawable/facebook_button_pressed" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_grey_bar" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="We won&apos;t post to your timeline , unless you ask"
+            android:textSize="@dimen/login_facebook_announcement_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_back_action" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/ly_guide_profile_add_tags"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp" >
+
+            <EditText
+                android:id="@+id/et_guide_profile_add_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border_activity_input_box"
+                android:hint="Add Attraction"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_input_content_text_size" />
+
+            <TextView
+                android:id="@+id/tv_left_number_input_characters"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:text="0"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/activity_input_left_number_characers_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_guide_profile_add_tags"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/divider_gray_des" />
+
+        <TextView
+            android:id="@+id/tv_guide_profile_tags_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_divider"
+            android:layout_marginLeft="20dp"
+            android:text="TAGS"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lv_tags_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guide_profile_tags_label"
+            android:divider="@null" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

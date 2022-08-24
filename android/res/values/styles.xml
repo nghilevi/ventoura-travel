@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="text_style">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="top_menu_text_style">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@drawable/ventoura_color</item>
+    </style>
+     <style name="top_menu_text_action_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ventoura_info_text_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="settings_label_text_style">
+        <item name="android:textSize">@dimen/settings_label_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="settings_text_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    
+    
+
+    <style name="filter_text_style">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="filter_checkbox_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_filter_checkbox</item>
+        <item name="android:textColor">@drawable/selector_filter_check_text_color</item>
+    </style>
+
+    <style name="ventouring_text_style">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="auto_complte_view_drop_down_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="filter_age_text_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- style of setting activity's button -->
+    <style name="setting_button_style" parent="text_style">
+        <item name="android:background">@drawable/selector_setting_btn</item>
+    </style>
+
+    <style name="ventouring_page_watermark_text_style">
+        <item name="android:padding">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- PopDownMenu -->
+
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/bottom_menu_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_menu_anim_out</item>
+    </style>
+
+    <style name="anim_option_menu_popup">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <!-- app trip -->
+    <style name="add_trip_title_text_style">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="add_trip_content_text_style">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/lightgray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minWidth">30dip</item>
+        <item name="android:maxWidth">30dip</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+    <style name="promotion_dream_trip_city_button_default_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@drawable/promotion_add_city_default_bg</item>
+    </style>
+    
+    <style name="promotion_dream_trip_city_button_done_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@drawable/promotion_add_city_done_bg</item>
+    </style>
+
+</resources>

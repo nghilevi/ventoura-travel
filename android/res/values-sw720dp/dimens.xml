@@ -1,0 +1,24 @@
+<resources>
+    
+    <!-- xhdpi -->
+    <dimen name="ventouring_head_show_wh">650dp</dimen>
+    <dimen name="ventouring_head_show_margin_top">50dp</dimen>
+    <dimen name="ventouring_head_show_margin_bottom">45dp</dimen>
+    <dimen name="ventouring_head_show_padding_top">20dp</dimen>
+    <dimen name="ventouring_head_show_padding_bottom">60dp</dimen>
+    
+    
+    <dimen name="profile_head_img_bg_height">650dp</dimen>
+     <dimen name="profile_head_img_selector_height">100dp</dimen>
+    
+    <dimen name="profile_head_img_wh">580dp</dimen>
+    
+    
+    <!-- ventouring button -->
+    <dimen name="ventouring_button_padding_bottom">100dp</dimen>
+    <dimen name="ventouring_button_padding_lr">45dp</dimen>
+    <dimen name="ventouring_button_wh">200dp</dimen>
+
+    
+    <dimen name="traveller_promotion_dream_city_wh">550dp</dimen>
+</resources>

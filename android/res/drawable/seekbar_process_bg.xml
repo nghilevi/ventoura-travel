@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@*android:id/background">
+        <shape>
+            <solid android:color="@color/gray" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/seekbar_process_bg_conner_dp"
+                android:bottomRightRadius="@dimen/seekbar_process_bg_conner_dp"
+                android:topLeftRadius="@dimen/seekbar_process_bg_conner_dp"
+                android:topRightRadius="@dimen/seekbar_process_bg_conner_dp" />
+        </shape>
+    </item>
+    <item android:id="@*android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#ff51495e" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@*android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/ventoura_color" />
+
+                <corners
+                    android:bottomLeftRadius="@dimen/seekbar_process_bg_conner_dp"
+                    android:bottomRightRadius="@dimen/seekbar_process_bg_conner_dp"
+                    android:topLeftRadius="@dimen/seekbar_process_bg_conner_dp"
+                    android:topRightRadius="@dimen/seekbar_process_bg_conner_dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

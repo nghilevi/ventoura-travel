@@ -1,0 +1,792 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:400,300,600,700);
+@charset 'UTF-8';
+
+
+
+
+body {
+  margin: 0; 
+  overflow: visible;
+  font-family: 'Signika', sans-serif;
+}
+video { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+ /* background: url('800x700.jpg') no-repeat;
+  background-size: 800px 700px;*/
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+#content
+{
+  z-index: -99;
+}
+
+#content { 
+  font-family: 'Signika', sans-serif;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 300;
+  z-index: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: white;
+  font-weight: 300;
+}
+p
+{
+  color: white;
+}
+
+.left-container
+{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.ventoura-logo
+{
+  width: 100%;
+  margin-left: 93px;
+}
+
+.divider
+{
+  border: 0;
+  margin: 0;
+  height: 400px;
+  background-color: rgb(248,85,80);
+}
+.divider h2
+{
+  margin: 0;
+  padding-top: 172px;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+.disclaimer-phone
+{
+  margin: 0;
+}
+.disclaimer-phone p
+{
+  font-size: 16px;
+  padding-right: 134px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px #000;
+}
+.mobile-links
+{
+  display: none;
+}
+
+.contenttwo
+{
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  background-color: black;
+  overflow: visible;
+  background-color: rgb(248,248,248);
+}
+  .contenttwo p
+  {
+    color: black;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0;
+  }
+  .contenttwo h1
+  {
+    color: black;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+.full-width
+{
+  padding-top: 100px; 
+  width:100%;
+  float: left;
+}
+
+.firstwrapper-two
+{
+  width: 40%;
+  float: left;
+}
+.firstwrapper-two h1
+{
+  padding-right: 5%;
+}
+
+.secondwrapper-two
+{
+  width: 20%;
+  float: left;
+}
+
+.thirdwrapper-two
+{
+  width: 40%;
+  float: left;
+}
+.form-container
+{
+  display: inline-block;
+  width: 100%;
+}
+.logo-container
+{
+  display: inline-block;
+  margin-top: 2%;
+  width: 100%;
+}
+
+
+.image
+{
+  position: relative;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+}
+
+  .image img
+  {
+    display: block;
+    width: 100%;
+  }
+.image.logo
+{
+  z-index: 1;
+  width: 500px;
+  float: left;
+}
+.image.circles
+{
+  width: 20%;
+  max-width: 175px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image.animation
+{
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image.snapchat
+{
+  width: 306px;
+  height: 82px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+}
+.image.facebook
+{
+  width: 82px;
+  height: 82px;
+  position: fixed;
+  bottom: 20px;
+  right: 346px;
+  z-index: 99;
+  border: none;
+}
+
+
+/* Form for signup details */
+.group        {
+  display: inline-block; 
+  position:relative; 
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.group.phone
+{
+  margin-bottom: -15px;
+}
+.group.email
+{
+  margin-top: 20px;
+
+}
+.group.promo
+{
+  display: block;
+}
+.group.phone input[type=text]         {
+  font-size: 18px;
+  padding: 10px 11px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border-radius: 0;
+}
+.group.email input[type=email] {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 315px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border-radius: 0;
+}
+#signup-form input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  color: #999; 
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+#signup-form input:focus ~ label    {
+  display: none;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:215px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:red; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+#signup-form input:focus ~ .bar:before, #signup-form input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:100%; 
+  width:215px; 
+  top:0%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+.highlight.email
+{
+  width: 330px;
+}
+.bar.email
+{
+  width: 330px;
+}
+
+/* active state */
+#signup-form input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:red; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:red; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:red; }
+  to  { width:0; background:transparent; }
+}
+
+
+
+#signup-form select
+{
+  width: 100px;
+  height: 40px;
+  border: 0;
+  padding-top: 2px;
+  margin-right: 10px;
+  box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(248,248,248,1);
+  border-radius: 0;
+}
+#signup-form h2
+{
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.submit-button.phone
+{
+  width: 41px;
+  height: 41px;
+  border: 0;
+  padding-top: 0px;
+  margin-left: 10px;
+  box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(248,248,248,0);
+  border-radius: 0;
+  background: url("submit-nofocus.png") no-repeat scroll 0 0 transparent;
+  color: rgba(0,0,0,0);
+  padding-top: 3px;
+}
+.submit-button.email
+{
+  width: 41px;
+  height: 41px;
+  border: 0;
+  padding-top: 0px;
+  margin-left: 10px;
+  box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(248,248,248,0);
+  border-radius: 0;
+  background: url("submit-nofocus.png") no-repeat scroll 0 0 transparent;
+  color: rgba(0,0,0,0);
+  padding-top: 28px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.submit-button.email
+{
+  padding-top: 3px;
+}
+}
+
+
+/* Hidden divs for signup form */
+.hidden
+{
+  display: none;
+  z-index: 999;
+}
+.unhidden
+{
+  display: block;
+  z-index: 999;
+}
+#signup-form
+{
+  width: 500px;
+  background-color: rgba(81,81,81,0);
+  margin-left: 100px;
+
+}
+#signup-form h2
+{
+  color: rgb(248,248,248);
+  text-shadow: 1px 1px #000;
+}
+#signup
+{
+  z-index: 999;
+  float: left;
+  width: 100%;
+}
+
+
+#signup input[type=button] {
+    /* Size and position */
+    width: 200px;
+    padding: 8px 5px;
+    z-index: 999;
+    
+    /* Styles */
+    background: #634056;
+    background: -moz-linear-gradient(rgba(248,85,80,0.9), rgba(248,85,80,1));
+    background: -ms-linear-gradient(rgba(248,85,80,0.9), rgba(248,85,80,1));
+    background: -o-linear-gradient(rgba(248,85,80,0.9), rgba(248,85,80,1));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(248,85,80,0.9)), to(rgba(248,85,80,1)));
+    background: -webkit-linear-gradient(rgba(248,85,80,0.9), rgba(248,85,80,1));
+    background: linear-gradient(rgba(248,85,80,0.9), rgba(248,85,80,1));    
+    border-radius: 3px;
+    border: 1px solid rgba(248,248,248,1);
+    box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Font styles */
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Signika', sans-serif;
+}
+
+#signup input[type=button]:hover {
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.2), 
+        inset 0 20px 30px rgba(99,64,86,0.5);
+}
+
+
+
+
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { margin: 0 0 60px; background: #fff; border: 0px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { text-decoration:none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: -50px; display: none;}
+.flex-direction-nav .flex-next { right: -50px; text-align: right; display: none;}
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; line-height:1; display: inline-block; content: '\f001'; }
+.flex-direction-nav a.flex-next:before  { content: '\f002'; }
+
+/* Pause/Play */
+.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
+.flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
+.flex-pauseplay a:hover  { opacity: 1; }
+.flex-pauseplay a.flex-play:before { content: '\f003'; }
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -12px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {  content: '';
+  text-indent: -9999px;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;}
+.flex-control-paging li a:hover {
+  width: 5px;
+  height: 5px;
+  background: none;
+  border: 2px solid black;
+  margin-top: -2px;
+  margin-left: -2px;}
+.flex-control-paging li a.flex-active {   
+  width: 8px;
+  height: 8px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -3px;
+  margin-left: -4px;}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  html { background: url('800x700.jpg') #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+.image.facebook
+{
+  display: none;
+}
+.mobile-links
+{
+  display: inline-block;
+  width: 100%; 
+}
+.snapbot{
+
+}
+.facebot
+{
+
+}
+
+.slides
+{
+  overflow: hidden;
+}
+.image.snapchat
+{
+  display: none;
+}
+.contenttwo
+{
+  top: 450px;
+  overflow: hidden;
+}
+  video
+  {
+    min-height: 0;
+    min-width: 0;
+
+  }
+  #content
+  {
+    height: auto;
+  }
+
+  .form-container
+  {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #signup-form
+  {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .logo-container
+  {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ventoura-logo
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image.logo
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .firstwrapper-two
+  {
+    width: 100%;
+    display: inline-block;
+  }
+  .secondwrapper-two
+  {
+    width: 100%;
+    display: inline-block;
+  }
+  .thirdwrapper-two
+  {
+    width: 100%;
+    display: inline-block;
+  }
+  .contenttwo h1
+  {
+    font-size: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .contenttwo p
+  {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 20px;
+  }
+  .flexslider
+  {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #signup-form h2 {
+  text-shadow: 1px 1px #000;
+  }
+}
+@media screen and (max-width: 500px) { 
+
+  .disclaimer-phone p
+  {
+    padding: 0;
+    padding-left: 0px;
+
+  }
+
+  .submit-button.phone
+  {
+    margin-right: 20px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .group.email input[type=email]
+  {
+    width: 215px;
+  }
+  .group.phone input[type=text]
+  {
+    width: 150px;
+
+  }
+  #signup-form select
+  {
+    width: 50px;
+    margin-left: 20px;
+  }
+  .highlight
+  {
+    width: 175px;
+  }
+  .bar
+  {
+    width: 175px;
+  }
+  .highlight.email
+  {
+    width: 230px;
+  }
+  .bar.email
+  {
+    width: 230px;
+  }
+
+  .logo-container
+  {
+    width: 100%;
+  }
+  .image.logo
+  {
+    width: 100%;
+  }
+  #signup-form
+  {
+    width: 100%;
+  }
+  .form-container
+  {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 325px) { 
+  .flexslider
+  {
+    width: 180px;
+  }
+  .group.email input[type=email]
+  {
+    width: 165px;
+  }
+  .group.phone input[type=text]
+  {
+    width: 125px;
+  }
+  #signup-form select
+  {
+    width: 25px;
+  }
+  .highlight
+  {
+    width: 150px;
+  }
+  .bar
+  {
+    width: 150px;
+  }
+  .highlight.email
+  {
+    width: 180px;
+  }
+  .bar.email
+  {
+    width: 180px;
+  }
+}
+

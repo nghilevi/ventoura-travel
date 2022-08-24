@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/traveller_walk_through_flip03" >
+
+    <Button
+        android:id="@+id/traveller_walk_through_get_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/border_white_transparent"
+        android:onClick="letsGoOnClick"/>
+
+</FrameLayout>

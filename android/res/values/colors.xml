@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="bnt_back_background_pressed" type="drawable">@color/titlebar_btn_bg</item>
+    <item name="bnt_back_background" type="drawable">@color/transparent_bg</item>
+    <item name="transparent_bg" type="drawable">@color/transparent_bg</item>
+    <item name="bnt_back_background_focused" type="drawable">@color/titlebar_btn_bg</item>
+    <item name="home_item01_bg" type="drawable">#803399ff</item>
+    <item name="home_item02_bg" type="drawable">#3399ff</item>
+    <item name="white_bg" type="drawable">@color/white</item>
+    <item name="bg_right_menu" type="drawable">#363636</item>
+   
+    <color name="option_menu_bg">#CC33576c</color>
+
+    <item name="ventoura_color" type="drawable">#f36b67</item>
+    <item name="ventoura_color_pressed" type="drawable">#E34440</item>
+    
+    <item name="ventoura_light_black" type="drawable">#3B342D</item>
+    <item name="ventoura_light_black_pressed" type="drawable">#29241E</item>
+    
+    <color name="ventoura_color">#f36b67</color>
+    <color name="ventoura_blue">#33576c</color>
+    
+     
+     
+     
+    <!-- message list color -->
+    <color name="message_time_color">@color/gray</color>
+    <color name="message_name_color">@color/black</color>
+    <color name="message_unread_color">@color/black</color>
+    <color name="roundedimage_color">#fff7f2e9</color>
+    <color name="text_color">#FFF</color>
+    <color name="text_shaddow">#FFF</color>
+    <color name="text_field_color">#000</color>
+    <color name="textShadow">#FFF</color>
+    <color name="listview_bg">#DADFEE</color>
+    <color name="send_light_color">#8897BF</color>
+    <color name="traveller_book_tour_text_title_color">#EBE6E7</color>
+    <color name="send_medium_color">#5D6CA5</color>
+    <color name="send_dark_color">#515F9F</color>
+    <color name="bar_dark_color">#CECECE</color>
+    <color name="bar_medium_color">#DFDEE0</color>
+    <color name="bar_light_color">#F2F2F2</color>
+    <color name="ischedule_score_title">@color/blue</color>
+    <color name="titlebar_btn_bg">@color/orange</color>
+    <color name="transparent_bg">#00000000</color>
+    
+    <color name="background">#f8f8f8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightwhite">#E8E8E8</color>
+    <!-- 白色 -->
+    <color name="slightblue">#ABD6E0</color>
+    <color name="yellow">#FFFF00</color>
+    <!-- 黄色 -->
+    <color name="gold">#FFD700</color>
+    <!-- 金色 -->
+    <color name="pink">#FFC0CB</color>
+    <!-- 粉红色 -->
+    <color name="lightpink">#FFB6C1</color>
+    <!-- 亮粉红色 -->
+    <color name="orange">#FFA500</color>
+    <!-- 橙色 -->
+    <color name="red">#FF0000</color>
+    <!-- 红色 -->
+    <color name="lightblue">#ADD8E6</color>
+    <!-- 亮蓝色 -->
+    <color name="lightgreen">#90EE90</color>
+    <!-- 亮绿色 -->
+    <color name="blueviolet">#8A2BE2</color>
+    <color name="slightgreen">#00FF00</color>
+    <!-- 紫罗兰蓝色 -->
+    <color name="lightskyblue">#87CEFA</color>
+    <!-- 亮天蓝色 -->
+    <color name="skyblue">#87CEEB</color>
+    <!-- 天蓝色 -->
+    <color name="purple">#800080</color>
+    <!-- 紫色 -->
+    <color name="cyan">#00FFFF</color>
+    <!-- 青色 -->
+    <color name="green">#00FF00</color>
+    <!-- 绿色 -->
+    <color name="darkgreen">#006400</color>
+    <!-- 暗绿色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 蓝色 -->
+    <color name="darkblue">#00008B</color>
+    <!-- 暗蓝色 -->
+    <color name="navy">#000080</color>
+    <!-- 海军色 -->
+    <color name="black">#000000</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 黑色 -->
+    <color name="lightgray">#FCFCFC</color>
+    
+    <color name="traveller_profile_underline_color">@color/ventoura_color</color>
+
+</resources>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_traveller_profile"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_traveller_ventouring"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerVentouringFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_traveller_message"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerMessageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_traveller_mytrip"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerMyTripFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_traveller_promotion"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerPromotionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_traveller_settings"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.TravellerSettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Followings are action fragments -->
+
+</LinearLayout>

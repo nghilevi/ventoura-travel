@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_guide_profile"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.GuideProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_guide_ventouring"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.GuideVentouringFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_guide_message"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.GuideMessageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_guide_bookings"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.GuideBookingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragment_guide_settings"
+        android:name="com.Mindelo.Ventoura.UI.Fragment.GuideSettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    
+</LinearLayout>

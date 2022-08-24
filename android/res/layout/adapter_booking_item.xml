@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/layout_tours_booking_info_left"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" >
+
+        <com.Mindelo.Ventoura.UI.View.RoundedImageView
+            android:id="@+id/rimgv_tours_head_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            roundedimageview:border_color="@color/roundedimage_color"
+            roundedimageview:border_thickness="@dimen/small_roundedimage_thickness"
+            android:src="@drawable/bg_main_blue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tours_info_right"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/layout_tours_booking_info_left" >
+
+        <TextView
+            android:id="@+id/tv_tours_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@null"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_tours_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@null"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_tours_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_tours_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@null"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_tours_status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_tours_date"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@null"
+            android:textColor="#000" />
+        
+        <ImageView
+            android:id="@+id/divider_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_gray_720" />
+    </RelativeLayout>
+
+</RelativeLayout>
