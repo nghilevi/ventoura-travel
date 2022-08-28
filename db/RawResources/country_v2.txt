@@ -1,0 +1,242 @@
+1#Afghanistan
+2#Aland Islands
+3#Albania
+4#Algeria
+5#American Samoa
+6#Andorra
+7#Angola
+8#Anguilla
+9#Antigua and Barbuda
+10#Argentina
+11#Armenia
+12#Aruba
+13#Australia
+14#Austria
+15#Azerbaijan
+16#Bahrain
+17#Bangladesh
+18#Barbados
+19#Belarus
+20#Belgium
+21#Belize
+22#Benin
+23#Bermuda
+24#Bhutan
+25#Bolivia
+26#Bosnia and Herzegovina
+27#Botswana
+28#Brazil
+29#British Indian Ocean Territory
+30#British Virgin Islands
+31#Brunei
+32#Bulgaria
+33#Burkina Faso
+34#Burma
+35#Burundi
+36#Cambodia
+37#Cameroon
+38#Canada
+39#Cape Verde
+40#Caribbean Netherlands
+41#Cayman Islands
+42#Central African Republic
+43#Chad
+44#Chile
+45#China
+46#Christmas Island
+47#Colombia
+48#Comoros
+49#Cook Islands
+50#Costa Rica
+51#Croatia
+52#Cuba
+53#Curacao
+54#Cyprus
+55#Czech Republic
+56#Congo (Democratic Republic)
+57#Denmark
+58#Djibouti
+59#Dominica
+60#Dominican Republic
+61#Ecuador
+62#Egypt
+63#El Salvador
+64#Equatorial Guinea
+65#Eritrea
+66#Estonia
+67#Ethiopia
+68#Falkland Islands
+69#Faroe Islands
+70#Fiji
+71#Finland
+72#France
+73#French Guiana
+74#French Polynesia
+75#Gabon
+76#Georgia
+77#Germany
+78#Ghana
+79#Gibraltar
+80#Greece
+81#Greenland
+82#Grenada
+83#Guadeloupe
+84#Guam
+85#Guatemala
+86#Guernsey
+87#Guinea
+88#Guinea-Bissau
+89#Guyana
+90#Haiti
+91#Honduras
+92#Hong Kong
+93#Hungary
+94#Iceland
+95#India
+96#Indonesia
+97#Iran
+98#Iraq
+99#Ireland
+100#Isle of Man
+101#Israel
+102#Italy
+103#Ivory Coast
+104#Jamaica
+105#Japan
+106#Jersey
+107#Jordan
+108#Kazakhstan
+109#Kenya
+110#Kiribati
+111#Kosovo
+112#Kuwait
+113#Kyrgyzstan
+114#Laos
+115#Latvia
+116#Lebanon
+117#Lesotho
+118#Liberia
+119#Libya
+120#Liechtenstein
+121#Lithuania
+122#Luxembourg
+123#Macau
+124#Macedonia
+125#Madagascar
+126#Malawi
+127#Malaysia
+128#Maldives
+129#Mali
+130#Malta
+131#Marshall Islands
+132#Martinique
+133#Mauritania
+134#Mauritius
+135#Mayotte
+136#Mexico
+137#Micronesia
+138#Moldova
+139#Monaco
+140#Mongolia
+141#Montenegro
+142#Montserrat
+143#Morocco
+144#Mozambique
+145#Namibia
+146#Nauru
+147#Nepal
+148#Netherlands
+149#New Caledonia
+150#New Zealand
+151#Nicaragua
+152#Niger
+153#Nigeria
+154#Niue
+155#Norfolk Island
+156#North Korea
+157#Northern Mariana Islands
+158#Norway
+159#Oman
+160#Pakistan
+161#Palau
+162#Palestinian Territory
+163#Panama
+164#Papua New Guinea
+165#Paraguay
+166#Peru
+167#Philippines
+168#Poland
+169#Portugal
+170#Puerto Rico
+171#Qatar
+172#Republic of the Congo
+173#Reunion
+174#Romania
+175#Russia
+176#Rwanda
+177#Saint Barthelemy
+178#Saint Helena
+179#Saint Kitts and Nevis
+180#Saint Lucia
+181#Saint Martin
+182#Saint Pierre and Miquelon
+183#Saint Vincent and the Grenadines
+184#Samoa
+185#San Marino
+186#Sao Tome and Principe
+187#Saudi Arabia
+188#Senegal
+189#Serbia
+190#Seychelles
+191#Sierra Leone
+192#Singapore
+193#Sint Maarten
+194#Slovakia
+195#Slovenia
+196#Solomon Islands
+197#Somalia
+198#South Africa
+199#South Korea
+200#South Sudan
+201#Spain
+202#Sri Lanka
+203#Sudan
+204#Suriname
+205#Svalbard
+206#Swaziland
+207#Sweden
+208#Switzerland
+209#Syria
+210#Taiwan
+211#Tajikistan
+212#Tanzania
+213#Thailand
+214#The Bahamas
+215#The Gambia
+216#Timor-Leste
+217#Togo
+218#Tokelau
+219#Tonga
+220#Trinidad and Tobago
+221#Tunisia
+222#Turkey
+223#Turkmenistan
+224#Turks and Caicos Islands
+225#Tuvalu
+226#Uganda
+227#Ukraine
+228#United Arab Emirates
+229#United Kingdom
+230#United States
+231#Uruguay
+232#Uzbekistan
+233#Vanuatu
+234#Vatican City
+235#Venezuela
+236#Vietnam
+237#Virgin Islands
+238#Wallis and Futuna
+239#Western Sahara
+240#Yemen
+241#Zambia
+242#Zimbabwe
