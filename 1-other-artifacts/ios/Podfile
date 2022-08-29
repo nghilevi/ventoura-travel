@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+pod "RMDateSelectionViewController", "~> 1.3.0"
+pod 'MBProgressHUD', '~> 0.8'
+pod 'M13BadgeView', '~> 1.0.2'
+pod 'Braintree' # Alternatively: pod 'Braintree', '~> 3.0.0'
+pod 'SWTableViewCell', '~> 0.3.6'

@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+GCC_TREAT_WARNINGS_AS_ERRORS = YES YES YES
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Braintree" "${PODS_ROOT}/Headers/Public/M13BadgeView" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/RMDateSelectionViewController" "${PODS_ROOT}/Headers/Public/SWTableViewCell"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Braintree/Braintree/PayPal/mSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Braintree" -isystem "${PODS_ROOT}/Headers/Public/M13BadgeView" -isystem "${PODS_ROOT}/Headers/Public/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/RMDateSelectionViewController" -isystem "${PODS_ROOT}/Headers/Public/SWTableViewCell"
+OTHER_LDFLAGS = -ObjC -l"PayPalMobile" -l"Pods-Braintree" -l"Pods-M13BadgeView" -l"Pods-MBProgressHUD" -l"Pods-RMDateSelectionViewController" -l"Pods-SWTableViewCell" -l"c++" -framework "AVFoundation" -framework "AddressBook" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "Foundation" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "PassKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

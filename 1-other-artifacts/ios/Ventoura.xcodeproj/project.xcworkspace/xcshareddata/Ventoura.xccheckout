@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ABFC3968-4EF7-407A-A84E-653C9824ECAD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ventoura</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64FB3D90-E211-40E7-9403-96E994E2A9AF</key>
+		<string>https://bitbucket.org/chennyboy/ventoura_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Ventoura.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64FB3D90-E211-40E7-9403-96E994E2A9AF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/chennyboy/ventoura_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64FB3D90-E211-40E7-9403-96E994E2A9AF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64FB3D90-E211-40E7-9403-96E994E2A9AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ventoura</string>
+		</dict>
+	</array>
+</dict>
+</plist>
